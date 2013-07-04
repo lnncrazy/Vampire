@@ -77,7 +77,7 @@ public class Conf extends Entity<Conf>
 		"vampire.is.human", true
 	);
 
-	public int updateRespawnFood = 20;
+	public int updateRespawnFood = 40;
 	public int updateRespawnHealth = 20;
 	
 	public Boolean updateNameColor = false;
@@ -98,9 +98,9 @@ public class Conf extends Entity<Conf>
 	// BLOODLUST
 	// -------------------------------------------- //
 	
-	public double bloodlustMinFood = 2.5D;
-	public double bloodlustFoodPerTick = -0.015D;
-	public double bloodlustSmokes = 1.5D;
+	public double bloodlustMinFood = 1.5D;
+	public double bloodlustFoodPerTick = -0.010D;
+	public double bloodlustSmokes = 2.5D;
 	
 	// -------------------------------------------- //
 	// NIGHTVISION
@@ -135,10 +135,10 @@ public class Conf extends Entity<Conf>
 	// REGEN
 	// -------------------------------------------- //
 	
-	public double regenMinFood = 2.5D;
+	public double regenMinFood = 1.5D;
 	public int regenDelayMillis = 10*1000;
-	public double regenFoodPerTick = 0.025D;
-	public double regenHealthPerFood = 2D;
+	public double regenFoodPerTick = 0.055D;
+	public double regenHealthPerFood = 2.5D;
 	
 	// -------------------------------------------- //
 	// TRUCE
@@ -167,11 +167,11 @@ public class Conf extends Entity<Conf>
 	// COMBAT
 	// -------------------------------------------- //
 	
-	public double combatDamageFactorWithoutBloodlust = 1.0;
-	public double combatDamageFactorWithBloodlust = 1.2;
+	public double combatDamageFactorWithoutBloodlust = 1.5;
+	public double combatDamageFactorWithBloodlust = 2.0;
 	
 	private final static transient int damageDiamondSword = 7;
-	public int combatWoodDamage = 3*damageDiamondSword;
+	public int combatWoodDamage = 2*damageDiamondSword;
 	
 	public Set<Material> combatWoodMaterials = MUtil.set(
 		Material.WOOD_AXE,
